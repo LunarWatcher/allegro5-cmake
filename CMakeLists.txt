@@ -29,6 +29,10 @@ set (ALLEGRO_INCLUDE_DIRS
     ${allegro5_SOURCE_DIR}/addons/primitives/
 )
 
+# Necessary to export the dirs (?)
+set (ALLEGRO_SOURCE_DIR ${allegro5_SOURCE_DIR})
+set (ALLEGRO_BINARY_DIR ${allegro5_BINARY_DIR})
+
 add_library(allegro-meta INTERFACE)
 target_include_directories(allegro-meta INTERFACE ${ALLEGRO_INCLUDE_DIRS})
 target_link_libraries(
