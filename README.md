@@ -91,6 +91,18 @@ The patch could also be upstreamed to Conan along with additional patches so all
 
 For a demonstration of this patch being used, see https://github.com/LunarWatcher/nyaa
 
+## Exports
+
+### Targets
+
+* `allegro-meta`: as described, INTERFACE target that links allegro with primtives, font, color, image, and ttf
+
+### Variables
+
+* `ALLEGRO_SOURCE_DIR`: `allegro5_SOURCE_DIR` from the embedded FetchContent call to allegro
+* `ALLEGRO_BINARY_DIR`: `allegro5_BINARY_DIR` from the embedded FetchContent call to allegro
+* `ALLEGRO_INCLUDE_DIRS`: All the include dirs required for `allegro-meta`. Can also be used standalone should you need it
+
 ## Versioning
 
 This patch repo is versionless because it's too much effort to bother. If you want to pin allegro5, pin this repo to whatever commit you want. Old versions are not actively maintained and may break; if you need to repatch an older version, fork the repo.
