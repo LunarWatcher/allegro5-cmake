@@ -106,8 +106,8 @@ index f8867e26b..e29fb555d 100644
 -        endif()
 -        set(CMAKE_REQUIRED_INCLUDES)
 -        set(CMAKE_REQUIRED_LIBRARIES)
-+    set(TTF_INCLUDE_DIRECTORIES ${FREETYPE_INCLUDE_DIRS})
-+    set(TTF_LIBRARIES ${FREETYPE_LIBRARIES})
++    set(TTF_INCLUDE_DIRECTORIES ${freetype_INCLUDE_DIRS})
++    set(TTF_LIBRARIES ${freetype_LIBRARIES})
  
 -        if(TTF_COMPILES)
 -            add_subdirectory(ttf)
